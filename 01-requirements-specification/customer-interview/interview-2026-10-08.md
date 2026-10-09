@@ -139,8 +139,7 @@ The following information was collected from other groups' questions and answers
 
 - The developers may choose the cloud storage provider.
 
-## 5. Open Questions for the Next Customer Meeting
-
+## 5. Possible open Questions for later
 1. Should the system monitor employee efficiency? If so, how should efficiency be measured?
 2. What should happen when a supervisor is sick or on vacation?
 3. What additional features or improvements does the customer want?
