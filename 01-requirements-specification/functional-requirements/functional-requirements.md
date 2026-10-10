@@ -38,4 +38,4 @@
 
 ## Users
 
-- The system shall provide an admin role to manage users. (Assumption, the customer has not defined it)
+- The system shall provide an admin role to manage users.
