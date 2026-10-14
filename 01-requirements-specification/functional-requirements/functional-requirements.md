@@ -12,6 +12,7 @@
 - The system shall allow the supervisor to approve a monthly time sheet or reject it with a reason.
 - The system shall inform the employee of a rejection and allow the employee to change the times and submit again.
 - The system shall update the flex time account only after the supervisor has approved the monthly time sheet.
+- The system shall show the updated flex time account to the employee, the supervisor and HR.
 - The system shall warn when the flex time account is outside the range of -100 to +100 hours (soft rule, no blocking).
 - The system shall notify the supervisor by email if an employee works more than 10 hours on a day.
 
