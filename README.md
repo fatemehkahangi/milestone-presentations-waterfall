@@ -21,7 +21,7 @@ approach.
 
 ## Project Phases
 
-1. Preparation of Customer Interview
+1. Customer Interview
 2. Requirements Specification
 3. Design
 4. Implementation
