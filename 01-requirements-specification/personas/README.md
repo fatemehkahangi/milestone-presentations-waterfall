@@ -52,11 +52,6 @@ Malte works from 7 to 10 o'clock. Then the fire alarm comes and he goes to help.
 At 13:30 he starts work again and finishes at 19:00.
 In the evening he enters two work blocks in the system.
 
-> [!TIP]
-> **Say it like this**
->
-> *This is Malte. He is 34 years old and works as an IT security consultant. In his free time he is a volunteer firefighter. When the alarm comes, he must stop work. So his day often has two or three parts. For Malte, the system must be simple and work on his phone.*
-
 ---
 
 ## 👩‍✈️ Persona 2: Ingrid Halvorsen
@@ -99,10 +94,6 @@ sequenceDiagram
 Ingrid gets an email: Malte worked 10.5 hours yesterday. She talks to Malte.
 At the end of the month she approves all timesheets in 20 minutes.
 
-> [!TIP]
-> **Say it like this**
->
-> *This is Ingrid. She is 58 years old and leads a team of nine people. Before STC, she was an air traffic controller, so rules are very important for her. She does not like dashboards. She wants a simple email when there is a problem. Next year she goes sailing for three months, so she needs a deputy in the system.*
 
 ---
 
