@@ -37,8 +37,8 @@ approach.
 
 ## Team
 
-- Project Lead:
-- Developers:
+- Project Lead: fatemeh
+- Developers: yebin, anja, alex,  viktoriia, fatemeh
 
 ## Current Status
 
