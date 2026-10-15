@@ -14,11 +14,12 @@
 - The system shall update the flex time account only after the supervisor has approved the monthly time sheet.
 - The system shall show the updated flex time account to the employee, the supervisor and HR.
 - The system shall warn when the flex time account is outside the range of -100 to +100 hours (soft rule, no blocking).
-- The system shall notify the supervisor by email if an employee works more than 10 hours on a day.
+- The system shall notify the supervisor and HR by email if an employee works more than 10 hours on a day.
 
 ## Vacation
 
 - The system shall allow an employee to request vacation with a start and end date; vacation cannot be added without a request.
+- Employee shall contact HR via phonecall/e-mail to inform them of their sickness. 
 - The system shall allow the supervisor to approve a vacation request or reject it with a reason, and shall inform the employee and HR.
 - The system shall manage a vacation account of 30 days per year per employee and show the days as open, planned and taken.
 - The system shall allow an employee to delete a planned vacation (an open request or an approved future vacation) and shall notify the supervisor.
