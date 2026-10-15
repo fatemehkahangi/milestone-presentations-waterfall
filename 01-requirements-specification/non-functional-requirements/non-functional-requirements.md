@@ -11,7 +11,7 @@
 
 - The system shall require user authentication before access is granted.
 - Access permissions shall depend on the user's role: Employee, Supervisor, or HR.
-- The specific authentication method is not prescribed by the customer and may be selected by the development team.
+- The specific authentication method is not prescribed by the customer and may be selected by the development team. (could be with the employee card)
 
 ## 3. Data Storage
 
