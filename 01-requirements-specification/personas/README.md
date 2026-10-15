@@ -54,11 +54,6 @@ Malte works from 7 to 10 o'clock. Then the fire alarm comes and he goes to help.
 At 13:30 he starts work again and finishes at 19:00.
 In the evening he enters two work blocks in the system.
 
-> [!TIP]
-> **Say it like this**
->
-> *This is Malte. He is 34 years old and works as an IT security consultant. In his free time he is a volunteer firefighter. When the alarm comes, he must stop work. So his day often has two or three parts. For Malte, the system must be simple and work on his phone.*
-
 ---
 
 ## 👩‍✈️ Persona 2: Ingrid Halvorsen
@@ -101,12 +96,6 @@ sequenceDiagram
 Ingrid gets an email: Malte worked 10.5 hours yesterday. She talks to Malte.
 At the end of the month she approves all timesheets in 20 minutes.
 
-> [!TIP]
-> **Say it like this**
->
-> *This is Ingrid. She is 58 years old and leads a team of nine people. Before STC, she was an air traffic controller, so rules are very important for her. She does not like dashboards. She wants a simple email when there is a problem. Next year she goes sailing for three months, so she needs a deputy in the system.*
-
----
 
 ## 👩‍💼 Persona 3: Sarah Schmidt
 
@@ -147,11 +136,6 @@ sequenceDiagram
 In January, the system sends a reminder to all employees with old vacation days.
 In February, an employee asks Petra to correct his vacation days.
 She checks it and changes the number in the system.
-
-> [!TIP]
-> **Say it like this**
->
-> *This is Petra. She is 45 years old and works in HR. She is responsible for vacation days and sick days. Employees cannot change their vacation days themselves, so they ask Petra. She can use the system only in the office. For Petra, the data must always be correct.*
 
 ---
 
