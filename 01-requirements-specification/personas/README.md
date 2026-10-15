@@ -53,8 +53,7 @@ At 13:30 he starts work again and finishes at 19:00.
 In the evening he enters two work blocks in the system.
 
 ---
-<br>
-<br>
+
 ## 👩‍✈️ Persona 2: Ingrid Halvorsen
 
 > 💬 *"Nobody works more than 10 hours in my team."*
