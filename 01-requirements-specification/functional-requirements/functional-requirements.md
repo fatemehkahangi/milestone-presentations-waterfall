@@ -19,7 +19,6 @@
 ## Vacation
 
 - The system shall allow an employee to request vacation with a start and end date; vacation cannot be added without a request.
-- Employee shall contact HR via phonecall/e-mail to inform them of their sickness. 
 - The system shall allow the supervisor to approve a vacation request or reject it with a reason, and shall inform the employee and HR.
 - The system shall manage a vacation account of 30 days per year per employee and show the days as open, planned and taken.
 - The system shall allow an employee to delete a planned vacation (an open request or an approved future vacation) and shall notify the supervisor.
@@ -27,6 +26,7 @@
 
 ## Sickness
 
+- Employee shall contact HR via phonecall/e-mail to inform them of their sickness. 
 - The system shall allow HR to register sickness for an employee; no approval is needed.
 - The system shall notify the supervisor of a sick employee by email.
 
