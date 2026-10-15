@@ -1,12 +1,14 @@
 # 👥 Personas – STC Time Management System
 
 > Based on the customer interview from **8 October 2026**.
+> Three main user groups: employees, supervisors and HR.
 > The personas are fictional, but their goals and problems come from the interview.
 
 | | Persona | Role | In one sentence |
 |:---:|---|---|---|
 | 🧑‍🚒 | [Malte Jansen](#-persona-1-malte-jansen) | Employee | A consultant whose workday is often split by fire alarms. |
 | 👩‍✈️ | [Ingrid Halvorsen](#-persona-2-ingrid-halvorsen) | Supervisor | A strict team leader who wants simple emails, not dashboards. |
+| 👩‍💼 | [Sarah Schmidt](#-persona-3-petra-schmidt) | HR manager | She takes care of vacation days and sick days. |
 
 ---
 
@@ -52,6 +54,11 @@ Malte works from 7 to 10 o'clock. Then the fire alarm comes and he goes to help.
 At 13:30 he starts work again and finishes at 19:00.
 In the evening he enters two work blocks in the system.
 
+> [!TIP]
+> **Say it like this**
+>
+> *This is Malte. He is 34 years old and works as an IT security consultant. In his free time he is a volunteer firefighter. When the alarm comes, he must stop work. So his day often has two or three parts. For Malte, the system must be simple and work on his phone.*
+
 ---
 
 ## 👩‍✈️ Persona 2: Ingrid Halvorsen
@@ -94,6 +101,57 @@ sequenceDiagram
 Ingrid gets an email: Malte worked 10.5 hours yesterday. She talks to Malte.
 At the end of the month she approves all timesheets in 20 minutes.
 
+> [!TIP]
+> **Say it like this**
+>
+> *This is Ingrid. She is 58 years old and leads a team of nine people. Before STC, she was an air traffic controller, so rules are very important for her. She does not like dashboards. She wants a simple email when there is a problem. Next year she goes sailing for three months, so she needs a deputy in the system.*
+
+---
+
+## 👩‍💼 Persona 3: Sarah Schmidt
+
+> 💬 *"Every vacation day must be correct."*
+
+<table>
+<tr><td><b>Age</b></td><td>45</td></tr>
+<tr><td><b>Role</b></td><td>HR manager (also an employee)</td></tr>
+<tr><td><b>Job</b></td><td>HR manager at STC, 12 years with the company</td></tr>
+<tr><td><b>Where she works</b></td><td>In the STC office only 🏢</td></tr>
+<tr><td><b>Tech skills</b></td><td>⭐⭐⭐ Normal – she uses Excel and email every day</td></tr>
+</table>
+
+### 🎯 Goals
+
+- She wants to see the **vacation days and sick days** of all employees.
+- She wants to **change vacation days** when an employee asks her.
+- She wants the system to **remind employees** about their old vacation days.
+
+### 😤 Problems
+
+- She can use the system **only in the office**, not at home.
+- Employees often ask her: *"How many vacation days do I have?"*
+- In April, some employees are angry because their old vacation days are gone.
+
+### 📅 Scenario
+
+```mermaid
+sequenceDiagram
+    participant S as ⏱️ System
+    participant E as 🧑 Employee
+    participant P as 👩‍💼 Petra
+    S->>E: 📧 January: "You still have old vacation days!"
+    E->>P: February: "Please correct my vacation days."
+    P->>S: Checks and changes the number
+```
+
+In January, the system sends a reminder to all employees with old vacation days.
+In February, an employee asks Petra to correct his vacation days.
+She checks it and changes the number in the system.
+
+> [!TIP]
+> **Say it like this**
+>
+> *This is Petra. She is 45 years old and works in HR. She is responsible for vacation days and sick days. Employees cannot change their vacation days themselves, so they ask Petra. She can use the system only in the office. For Petra, the data must always be correct.*
 
 ---
 
