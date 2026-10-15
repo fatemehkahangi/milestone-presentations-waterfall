@@ -29,7 +29,7 @@ Scenarios describe how different users interact with the time management system 
 
 ## Scenario 2: Supervisor Approval and Flex Time Update
 
-**User:** Maria (Supervisor)
+**User:** Ingrid Halvorsen (Supervisor)
 
 1. At the beginning of the new month, Maria logs into the central system to review her team's submitted time sheets.
 2. She opens Alex's monthly record, checks project time allocations, and verifies compliance with company break policies.
@@ -41,7 +41,7 @@ Scenarios describe how different users interact with the time management system 
 
 ## Scenario 3: Requesting and Canceling Vacation Time
 
-**User:** David (STC Employee)
+**User:** Malte Jansen (Employee)
 
 1. **Submission:** David submits a 5-day vacation request at least 1 day prior to the planned start date.
 2. **Approval:** His supervisor approves the request, reserving 5 days from David’s annual 30-day allowance.
