@@ -35,7 +35,6 @@
 - The system shall allow an employee to flip through the months and view the work time details.
 - The system shall show a supervisor the flex time state and the vacation days of each of his or her employees.
 - The system shall show HR the flex time state and the vacation days of every employee.
-- The system shall show HR which employees work too much (between 8 and 10 hours, more than 10 hours on a day). (To be confirmed, see conflict above)
 
 ## Users
 
