@@ -42,4 +42,4 @@ approach.
 
 ## Current Status
 
-Current milestone: Requirements Specification
+Current milestone: Design
