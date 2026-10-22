@@ -4,9 +4,7 @@
 
 - The system shall be accessible via a web browser from any location with an internet connection, using a laptop or a mobile device.
 - The system shall require login with a username and password.
-- The system shall transmit all data over an encrypted connection (HTTPS) and store passwords only in hashed form.
 - The system shall temporarily lock a user account after several failed login attempts.
-- HR shall only be allowed to access employee data from within the company premises, identified by the company network address range. If an HR user attempts to access employee data from outside, the system shall deny access.
 
 ## 2. Security
 
