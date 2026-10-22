@@ -2,11 +2,11 @@
 
 ## 1. Accessibility
 
-- Employees and supervisors shall be able to access the system remotely through the company's existing VPN connection.
-- The customer already provides VPN access to the corporate network.
-- After establishing a VPN connection, employees and supervisors shall be able to access the system from outside the company premises using an online connection, for example from a laptop.
-- HR shall only be allowed to access employee data from within the company premises.
-- If an HR user attempts to access employee data from outside the company premises, the system shall deny access.
+- The system shall be accessible via a web browser from any location with an internet connection, using a laptop or a mobile device. No VPN connection is required.
+- The system shall require login with a username and password.
+- The system shall transmit all data over an encrypted connection (HTTPS) and store passwords only in hashed form.
+- The system shall temporarily lock a user account after several failed login attempts.
+- HR shall only be allowed to access employee data from within the company premises, identified by the company network address range. If an HR user attempts to access employee data from outside, the system shall deny access.
 
 ## 2. Security
 
