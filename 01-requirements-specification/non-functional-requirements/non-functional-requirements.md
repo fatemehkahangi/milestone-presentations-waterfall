@@ -2,7 +2,7 @@
 
 ## 1. Accessibility
 
-- The system shall be accessible via a web browser from any location with an internet connection, using a laptop or a mobile device. No VPN connection is required.
+- The system shall be accessible via a web browser from any location with an internet connection, using a laptop or a mobile device.
 - The system shall require login with a username and password.
 - The system shall transmit all data over an encrypted connection (HTTPS) and store passwords only in hashed form.
 - The system shall temporarily lock a user account after several failed login attempts.
