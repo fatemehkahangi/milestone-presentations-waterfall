@@ -1,0 +1,124 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="stc-balanced" name="Subsystem Architecture - Balanced">
+    <mxGraphModel dx="1987" dy="1409" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1280" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="functional_boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#555555;strokeWidth=1.8;dashed=1;dashPattern=8 5;fontColor=#222222;fontSize=17;align=left;verticalAlign=top;spacingTop=9;spacingLeft=14;container=0;connectable=1;" value="STC Application — Functional Subsystems" vertex="1">
+          <mxGeometry height="619" width="1768" x="66" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="users" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Users:&lt;/b&gt; Employee · Supervisor · HR · Admin" vertex="1">
+          <mxGeometry height="45" width="700" x="600" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;1. User &amp;amp; Access Management&lt;/b&gt;&lt;br/&gt;Authentication · Role-based authorization · User administration" vertex="1">
+          <mxGeometry height="78" width="700" x="600" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="work" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;2. Work Time Management&lt;/b&gt;&lt;br/&gt;Work entries · Break rules · Project time bookings" vertex="1">
+          <mxGeometry height="98" width="450" x="90" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="timesheet" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;3. Timesheet Management&lt;/b&gt;&lt;br/&gt;Monthly submission · Approval / rejection · Resubmission" vertex="1">
+          <mxGeometry height="98" width="450" x="650" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="flex" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;4. Flex-Time Management&lt;/b&gt;&lt;br/&gt;Flex leave · Approved-balance update · ±100h warning" vertex="1">
+          <mxGeometry height="98" width="540" x="1210" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="vacation" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;5. Vacation Management&lt;/b&gt;&lt;br/&gt;Requests · Approval / rejection · Cancellation · Balances" vertex="1">
+          <mxGeometry height="98" width="650" x="90" y="637" as="geometry" />
+        </mxCell>
+        <mxCell id="sick" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;6. Sickness Management&lt;/b&gt;&lt;br/&gt;HR records sickness · No approval required" vertex="1">
+          <mxGeometry height="98" width="650" x="850" y="637" as="geometry" />
+        </mxCell>
+        <mxCell id="alerts" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;7. Notification Management&lt;/b&gt;&lt;br/&gt;Timesheet / vacation / sickness emails · Daily &amp;gt;10h alert to Supervisor + HR · Vacation reminders" vertex="1">
+          <mxGeometry height="86" width="800" x="90" y="815" as="geometry" />
+        </mxCell>
+        <mxCell id="stats" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;8. Statistics &amp;amp; Reporting&lt;/b&gt;&lt;br/&gt;Employee monthly overview · Supervisor team view · HR company view" vertex="1">
+          <mxGeometry height="86" width="750" x="1000" y="815" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1.5;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Central Database — shared persistent storage&lt;/b&gt;&lt;br/&gt;Users · Work entries · Timesheets · Flex balances · Vacation · Sickness · Projects" vertex="1">
+          <mxGeometry height="78" width="830" x="530" y="1049" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="auth" value="Login / access">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="functional_boundary" value="Authentication &amp;amp; authorization">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="work" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="timesheet" value="Recorded hours">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="timesheet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="flex" value="Approved sheet → balance update">
+          <mxGeometry relative="1" x="0.0909" y="16" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="vacation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.32;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;" target="alerts" value="Vacation status / reminders">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="sick" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.2;exitY=1;exitDx=0;exitDy=0;entryX=0.82;entryY=0;entryDx=0;entryDy=0;" target="alerts" value="Supervisor sickness notice">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="780" />
+              <mxPoint x="745" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="vacation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.978;exitY=0.991;exitDx=0;exitDy=0;entryX=0.099;entryY=0.028;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" target="stats" value="Vacation balances">
+          <mxGeometry relative="1" x="0.5587" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="722.5" y="734.1" />
+              <mxPoint x="722.5" y="795" />
+              <mxPoint x="1067.5" y="795" />
+              <mxPoint x="1067.5" y="810" />
+              <mxPoint x="1074.3" y="810" />
+            </Array>
+            <mxPoint x="682.4999999999995" y="750" as="sourcePoint" />
+            <mxPoint x="1067.4999999999995" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="sick" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.76;exitY=1;exitDx=0;exitDy=0;entryX=0.62;entryY=0;entryDx=0;entryDy=0;" target="stats" value="Sickness records">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="work" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.08;exitY=1;exitDx=0;exitDy=0;entryX=0.07;entryY=0;entryDx=0;entryDy=0;" target="alerts" value="Overtime &amp;gt;10h/day">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="125" y="570" />
+              <mxPoint x="125" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="timesheet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.34;exitY=1;exitDx=0;exitDy=0;entryX=0.52;entryY=0;entryDx=0;entryDy=0;" target="alerts" value="Submission / rejection">
+          <mxGeometry relative="1" x="-0.7147" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="800" y="555" />
+              <mxPoint x="800" y="770" />
+              <mxPoint x="506" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="flex" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.85;exitY=1;exitDx=0;exitDy=0;entryX=0.93;entryY=0;entryDx=0;entryDy=0;" target="stats" value="Flex-time balance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1670" y="555" />
+              <mxPoint x="1670" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="work" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.95;exitY=1;exitDx=0;exitDy=0;entryX=0.18;entryY=0;entryDx=0;entryDy=0;" target="stats" value="Work hours / projects">
+          <mxGeometry relative="1" x="-0.1989" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="515" y="570" />
+              <mxPoint x="515" y="755" />
+              <mxPoint x="1130" y="755" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="functional_boundary" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.6;endArrow=block;endFill=1;fontColor=#111111;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="db" value="Shared persistent data (read / write)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
