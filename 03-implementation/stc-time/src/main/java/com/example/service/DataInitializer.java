@@ -1,12 +1,17 @@
 package com.example.service;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import com.example.domain.*;
 import com.example.repository.UserRepository;
 import com.example.security.AuthService;
 
+import org.springframework.core.annotation.Order;
+
 @Component
+
+@Order(1) //making the start-up order explicit
+//member 5 will have to add a second seed class
+
 public class DataInitializer implements CommandLineRunner {
 
     private final UserRepository users;
