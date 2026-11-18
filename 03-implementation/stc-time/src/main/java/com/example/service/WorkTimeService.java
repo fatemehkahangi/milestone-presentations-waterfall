@@ -92,17 +92,11 @@ public class WorkTimeService {
         entry.setComment(comment == null || comment.isBlank() ? null : comment.trim());
         TimeEntry saved = entries.save(entry);
 
-        // 5. More than 10 hours on that day -> notify the supervisor
+        // 5. The day crosses 10 hours with this entry -> notify the supervisor once
         int dayTotal = dailyWorkedMinutes(sheet, date);
-        if (dayTotal > DAILY_LIMIT_MINUTES) {
-            try {
-                notifications.notifyOvertime(employee, date, dayTotal);
-            } catch (UnsupportedOperationException e) {
-                // NotificationService is still a stub (person 4).
-                // Remove this try/catch once notifyOvertime is implemented.
-                System.out.println("[OVERTIME not sent yet] " + employee.getName()
-                        + " worked " + dayTotal + " min on " + date);
-            }
+        int before = dayTotal - saved.getWorkedMinutes();
+        if (before <= DAILY_LIMIT_MINUTES && dayTotal > DAILY_LIMIT_MINUTES) {
+            notifications.notifyOvertime(employee, date, dayTotal);
         }
 
         return saved;
