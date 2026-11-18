@@ -1,4 +1,3 @@
-# milestone-presentations-waterfall
 # STC Time Management System
 
 ## Project Overview
