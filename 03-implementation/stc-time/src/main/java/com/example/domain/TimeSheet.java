@@ -6,7 +6,7 @@ import java.util.List;
 import jakarta.persistence.*;
 
 @Entity
-@Table(uniqueConstraints = @UniqueConstraint(columnNames = {"employee_id", "year", "month"}))
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = {"employee_id", "sheet_year", "sheet_month"}))
 public class TimeSheet {
 
     @Id
@@ -16,11 +16,11 @@ public class TimeSheet {
     @ManyToOne(optional = false)
     private User employee;
 
-    @Column(name = "year")
+   @Column(name = "sheet_year")
     private int year;
 
-    @Column(name = "month")
-    private int month;           // 1 to 12
+   @Column(name = "sheet_month")
+    private int month;
 
     @Enumerated(EnumType.STRING)
     private TimeSheetStatus status = TimeSheetStatus.OPEN;
