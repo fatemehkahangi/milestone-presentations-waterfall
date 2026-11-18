@@ -23,8 +23,11 @@ public class MainLayout extends AppLayout {
         SideNav nav = new SideNav();
         nav.addItem(new SideNavItem("Dashboard", ""));
         nav.addItem(new SideNavItem("Time sheet", "timesheet"));
+        nav.addItem(new SideNavItem("Vacation", "vacation"));
+        nav.addItem(new SideNavItem("Sickness", "sickness"));
         if (user.getRole() == Role.SUPERVISOR) {
             nav.addItem(new SideNavItem("Approvals", "approvals"));
+            nav.addItem(new SideNavItem("Vacation requests", "vacation-approvals"));
         }
         addToDrawer(nav);
     }

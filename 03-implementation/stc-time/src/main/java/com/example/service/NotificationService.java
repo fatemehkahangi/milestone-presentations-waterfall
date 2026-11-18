@@ -25,13 +25,17 @@ public class NotificationService {
      * and prints a fake email simulation to the console.
      */
     public void notify(User recipient, String message) {
+        notify(recipient, message, null);
+    }
+
+    public void notify(User recipient, String message, String link) {
         if (recipient == null) {
             return;
         }
-
         Notification notification = new Notification();
         notification.setRecipient(recipient);
         notification.setMessage(message);
+        notification.setLink(link);
         notificationRepository.save(notification);
 
         System.out.println("[EMAIL to " + recipient.getEmail() + "] " + message);
@@ -52,7 +56,7 @@ public class NotificationService {
 
         String message = employee.getName() + " worked " + timeFormatted + " on " + formattedDate;
 
-        notify(employee.getSupervisor(), message);
+        notify(employee.getSupervisor(), message, "approvals");
     }
 
     /**
