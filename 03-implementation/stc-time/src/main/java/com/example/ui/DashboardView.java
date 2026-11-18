@@ -17,6 +17,8 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
+import com.vaadin.flow.component.UI;
+
 @Route(value = "", layout = MainLayout.class)
 @PageTitle("Dashboard | STC Time")
 public class DashboardView extends VerticalLayout {
@@ -88,10 +90,27 @@ public class DashboardView extends VerticalLayout {
 
         header.add(new H3("Notifications"), unreadCountSpan, markAllRead);
 
+        // Grid to display notifications
         notificationGrid = new Grid<>(Notification.class, false);
-        notificationGrid.addColumn(Notification::getMessage).setHeader("Message");
-        notificationGrid.addColumn(n -> n.getCreatedAt().format(TIME_FORMAT)).setHeader("Time");
+        notificationGrid.addComponentColumn(n -> {
+            Span message = new Span(n.getMessage());
+            message.getStyle().set("white-space", "normal");
+            if (n.getLink() != null) {
+                message.getStyle().set("cursor", "pointer");
+            }
+            return message;
+        }).setHeader("Message").setFlexGrow(3);
+        notificationGrid.addColumn(n -> n.getCreatedAt().format(
+                java.time.format.DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"))).setHeader("Time");
         notificationGrid.addColumn(n -> n.isRead() ? "Read" : "Unread").setHeader("Status");
+
+        notificationGrid.addItemClickListener(e -> {
+            String link = e.getItem().getLink();
+            if (link != null && !link.isBlank()) {
+                UI.getCurrent().navigate(link);
+            }
+        });
+        
         refreshGrid(user);
 
         section.add(header, notificationGrid);

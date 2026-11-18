@@ -15,6 +15,11 @@ public class Notification {
 
     private String message;
 
+    private String link;   // route to open when the notification is clicked, e.g. "vacation"
+
+    public String getLink() { return link; }
+    public void setLink(String link) { this.link = link; }
+    
     private LocalDateTime createdAt = LocalDateTime.now();
 
     @Column(name = "is_read")
