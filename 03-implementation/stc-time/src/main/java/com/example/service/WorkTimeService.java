@@ -81,7 +81,15 @@ public class WorkTimeService {
                     + workedBeforeBreak / 60 + "h " + workedBeforeBreak % 60 + "min of work");
         }
 
-        // 4. Save the entry
+        // 4. No overlap with other entries of the same day
+        for (TimeEntry other : entries.findByTimeSheetAndDate(sheet, date)) {
+            if (begin.isBefore(other.getEndTime()) && end.isAfter(other.getBeginTime())) {
+                throw new IllegalArgumentException("Overlaps with an existing entry "
+                        + other.getBeginTime() + "-" + other.getEndTime() + " on this day");
+            }
+        }
+
+        // 5. Save the entry
         TimeEntry entry = new TimeEntry();
         entry.setTimeSheet(sheet);
         entry.setDate(date);
